@@ -36,7 +36,7 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section className="py-16 bg-[#F9F2ED]">
+    <section className="py-16 bg-gray-200">
       <h2 className="text-4xl font-semibold text-center mb-8">
         Frequently Asked{" "}
         <span className="bg-gradient-to-r from-[#D44E50] to-[#544142] bg-clip-text text-transparent">
