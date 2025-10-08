@@ -9,11 +9,11 @@ export default function Card({ icon, title, description }) {
           <icon className="w-12 h-12 text-[#D44E50]" />
         ) : (
           
-          <img src={icon} alt={title} className="w-12 h-12 object-contain" />
+          <img src={icon} alt={title} className="w-30 h-30  object-contain" />
         )}
       </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-2xl font-semibold mb-2">{title}</h3>
+      <p className="text-xl text-gray-600">{description}</p>
     </div>
   );
 }
