@@ -4,9 +4,11 @@ import HeroSection from './components/sections/hero'
 import About from './components/sections/About'
 import FaqSection from './components/sections/FAQ'
 import Partners from './components/sections/Partners'
+import Getintouch from './components/sections/Getintouch'
+import Footer from './components/ui/footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     
@@ -16,6 +18,8 @@ function App() {
         <About />
         <FaqSection />
         <Partners />
+        <Getintouch />
+        <Footer />
     
 
         </div>
