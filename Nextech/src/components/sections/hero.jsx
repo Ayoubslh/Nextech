@@ -12,19 +12,19 @@ export default function HeroSection() {
     <section
       className="relative flex flex-col items-center justify-center text-center h-screen overflow-hidden"
       style={{
-        background: "linear-gradient(135deg, #D44E50 0%, #544142 100%)",
+        background: "linear-gradient(135deg, #544142 0%, #D44E50 100%)",
       }}
     >
      
 
       {/* CONTENT */}
       <div className="relative z-10 text-white max-w-3xl px-6">
-        <h1 className="text-6xl font-extrabold mb-4">
-          <span className="text-[#D44E50]">NEX</span>TECH
+        <h1 className="text-9xl font-extrabold mb-4">
+         NEX<span className="bg-gradient-to-r from-[#F0F0F0] to-[#D63738] bg-clip-text text-transparent">TECH</span>
         </h1>
-        <h2 className="text-2xl mb-6 font-medium">
+        <p className="text-5xl text-black mb-6 font-semibold">
           Your Hub for Tech Excellence
-        </h2>
+        </p>
         <p className="text-lg opacity-90 mb-8">
           Join our dynamic tech community where learning exceeds traditional
           boundaries. Dive into innovation, collaborate on real projects, and
@@ -39,17 +39,17 @@ export default function HeroSection() {
           </button>
         </div>
 
-        <div className="flex justify-center gap-10 mt-16">
-          <div>
-            <p className="text-3xl font-bold text-[#D44E50]">+100</p>
+        <div className="flex justify-center items-center text-center gap-30 mt-16">
+          <div className="justify-center items-center text-center">
+            <p className="text-5xl font-bold text-[#ffffff]">+30</p>
             <p className="text-sm opacity-80">Active Member</p>
           </div>
           <div>
-            <p className="text-3xl font-bold text-[#D44E50]">+50</p>
+            <p className="text-5xl font-bold text-[#ffffff]">+5</p>
             <p className="text-sm opacity-80">Tech Event</p>
           </div>
           <div>
-            <p className="text-3xl font-bold text-[#D44E50]">+25</p>
+            <p className="text-5xl font-bold text-[#ffffff]">+10</p>
             <p className="text-sm opacity-80">Projects</p>
           </div>
         </div>

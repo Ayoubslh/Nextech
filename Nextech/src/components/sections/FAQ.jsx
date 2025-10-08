@@ -37,13 +37,18 @@ const faqs = [
 export default function FaqSection() {
   return (
     <section className="py-16 bg-gray-200">
-      <h2 className="text-4xl font-semibold text-center mb-8">
+      <h2 className="text-6xl font-semibold text-center mb-8">
         Frequently Asked{" "}
         <span className="bg-gradient-to-r from-[#D44E50] to-[#544142] bg-clip-text text-transparent">
           Questions
         </span>
       </h2>
-      <div className="max-w-3xl mx-auto">
+        <div className="max-w-6xl mx-auto text-center text-gray-700">
+          <p className="mb-6 text-2xl">
+           Get answers to common questions about joining and participating in our tech community  </p>
+          
+        </div>
+              <div className="max-w-6xl mx-auto">
         <FaqAccordion faqs={faqs} />
       </div>
     </section>
