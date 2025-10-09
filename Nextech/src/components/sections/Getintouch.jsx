@@ -19,7 +19,7 @@ export default function Getintouch() {
                 {/* Cards Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
                     {/* Send us a Message Card - Full Height */}
-                    <Card2 className="p-4 md:p-6">
+                    <Card2 >
                         <div className="flex items-center mb-4 md:mb-6">
                             <div className="w-6 h-6 md:w-8 md:h-8 mr-3">
                                 <svg className="w-6 h-6 md:w-8 md:h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function Getintouch() {
                     {/* Right Column - Stack of 3 cards */}
                     <div className="space-y-4 md:space-y-6">
                         {/* Email Us Card */}
-                        <Card2 className="p-4 md:p-6">
+                        <Card2 >
                             <div className="flex items-center mb-4 md:mb-6">
                                 <div className="w-5 h-5 md:w-6 md:h-6 mr-3">
                                     <svg className="w-5 h-5 md:w-6 md:h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ export default function Getintouch() {
                         </Card2>
 
                         {/* Join Our Community Card */}
-                        <Card2 className="p-4 md:p-6">
+                        <Card2>
                             <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">Join Our Community</h3>
                             <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
                                 Ready to become an active member in our future events? Fill out our membership form and start your journey with Nextech today!
@@ -99,7 +99,7 @@ export default function Getintouch() {
                         </Card2>
 
                         {/* Download Our App Card */}
-                        <Card2 className="p-4 md:p-6">
+                        <Card2 >
                             <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">Download Our App</h3>
                             <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
                                 Get our mobile app for a new experimental experience and enjoy seamless browsing!
