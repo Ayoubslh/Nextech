@@ -10,7 +10,7 @@ export default function About() {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center mb-8 md:mb-12">
           About Our {" "} 
-          <span className="bg-gradient-to-r from-[#D44E50] to-[#544142] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r to-[#D44E50] from-[#544142] bg-clip-text text-transparent">
             Club
           </span>
         </h2>

@@ -8,7 +8,7 @@ export default function Getintouch() {
                 {/* Header */}
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center mb-4 sm:mb-6 md:mb-8">
-                        Get In <span className="bg-gradient-to-r from-[#D44E50] to-[#544142] bg-clip-text text-transparent">Touch</span>
+                        Get In <span className="bg-gradient-to-r to-[#D44E50] from-[#544142] bg-clip-text text-transparent">Touch</span>
                     </h2>
                     <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4">
                         Don't hesitate to contact us using the form below. You can also email us or even come by to 

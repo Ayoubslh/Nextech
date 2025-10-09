@@ -1,5 +1,8 @@
 import { useMemo } from "react";
 import particles from "./../../assets/particles.svg";
+import heroCode from "./../../assets/herocode.svg";
+import hero2Guys from "./../../assets/hero2guys.svg";
+import heroThunder from "./../../assets/herothunder.svg";
 
 export default function HeroSection() {
   // Generate non-overlapping particle positions
@@ -19,7 +22,7 @@ export default function HeroSection() {
         left: `${leftBase + Math.random() * 10 - 5}%`,
         size: `${200 + Math.random() * 60}px`, // slightly smaller for elegance
         opacity: 1, // very soft look (0.6–0.8)
-        delay: `${Math.random() * 10}s`,
+        delay: `${Math.random() * 1}s`,
       });
     }
     return positions;
@@ -53,8 +56,60 @@ export default function HeroSection() {
         ))}
       </div>
 
+      {/* DECORATIVE SVG ELEMENTS */}
+      <div className="absolute inset-0 z-5 pointer-events-none">
+        {/* Code Icon - Top Left */}
+        <div className="absolute top-20 left-4 md:left-8 lg:left-16">
+          <img 
+            src={heroCode} 
+            alt="Code" 
+            className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 opacity-80 animate-float"
+            style={{ animationDelay: '0.5s' }}
+          />
+        </div>
+
+        {/* People Icon - Left Side Middle */}
+        <div className="absolute top-1/2 left-8 md:left-16 lg:left-24 transform -translate-y-1/2">
+          <img 
+            src={hero2Guys} 
+            alt="Team" 
+            className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 opacity-80 animate-float"
+            style={{ animationDelay: '1s' }}
+          />
+        </div>
+
+        {/* Thunder Icon - Right Side */}
+        <div className="absolute top-1/3 right-4 md:right-8 lg:right-16">
+          <img 
+            src={heroThunder} 
+            alt="Innovation" 
+            className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 opacity-80 animate-float"
+            style={{ animationDelay: '1.5s' }}
+          />
+        </div>
+
+        {/* Additional decorative elements for better distribution */}
+        <div className="absolute bottom-32 right-8 md:right-16 lg:right-24">
+          <img 
+            src={heroCode} 
+            alt="Code" 
+            className="w-12 h-12 md:w-16 md:h-16 opacity-60 animate-float"
+            style={{ animationDelay: '2s' }}
+          />
+        </div>
+
+        <div className="absolute bottom-40 left-1/4 transform -translate-x-1/2">
+          <img 
+            src={heroThunder} 
+            alt="Innovation" 
+            className="w-14 h-14 md:w-18 md:h-18 opacity-60 animate-float"
+            style={{ animationDelay: '2.5s' }}
+          />
+        </div>
+      </div>
+
       {/* CONTENT */}
-      <div className="pt-16 z-10 text-white max-w-7xl mx-auto">
+      <div className="pt-16 z-10 relative text-white max-w-7xl mx-auto">
         <h1 className="text-6xl  md:text-7xl lg:text-8xl xl:text-9xl font-extrabold mb-4 leading-tight">
           NEX
           <span className="bg-gradient-to-r from-[#F0F0F0] to-[#D63738] bg-clip-text text-transparent">
