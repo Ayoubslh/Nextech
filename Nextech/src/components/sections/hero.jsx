@@ -18,7 +18,7 @@ export default function HeroSection() {
         top: `${topBase + Math.random() * 10 - 5}%`, // small random offset
         left: `${leftBase + Math.random() * 10 - 5}%`,
         size: `${200 + Math.random() * 60}px`, // slightly smaller for elegance
-        opacity: 2, // very soft look (0.6–0.8)
+        opacity: 1, // very soft look (0.6–0.8)
         delay: `${Math.random() * 5}s`,
       });
     }
@@ -81,7 +81,7 @@ export default function HeroSection() {
         </div>
 
         {/* Stats */}
-        <div className="flex flex-col sm:flex-row justify-center items-center text-center gap-8 sm:gap-16 md:gap-24 lg:gap-30">
+        <div className="flex  sm:flex-row justify-center items-center text-center gap-8 sm:gap-16 md:gap-24 lg:gap-30">
           <div className="flex flex-col justify-center items-center text-center">
             <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#ffffff]">
               +30
