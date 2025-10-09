@@ -7,9 +7,7 @@ export default function Footer() {
                     {/* Left Column - Brand and Description */}
                     <div className="space-y-6">
                         <div className="flex items-center space-x-2">
-                            <div className="w-8 h-8 bg-red-500 flex items-center justify-center rounded">
-                                <span className="text-white font-bold text-lg">N</span>
-                            </div>
+                           <img src="/logo.png" alt="NEXTECH Logo" className="w-10 h-8" />
                             <span className="text-xl font-bold">NEXTECH</span>
                         </div>
                         <p className="text-gray-300 leading-relaxed">
