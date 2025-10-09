@@ -5,7 +5,7 @@ import Header from './components/ui/header'
 import Footer from './components/ui/footer'
 import ErrorBoundary from './components/ui/ErrorBoundary'
 import ScrollToTop from './components/ui/ScrollToTop'
-import { routes, NotFound } from './components/routes/routes'
+import { routes, NotFound } from './components/routes/routes.jsx'
 import { usePageTitle } from './hooks/usePageTitle'
 
 // Loading component with better UX
