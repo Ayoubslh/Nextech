@@ -55,7 +55,7 @@ export default function HeroSection() {
 
       {/* CONTENT */}
       <div className="pt-16 z-10 text-white max-w-7xl mx-auto">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold mb-4 leading-tight">
+        <h1 className="text-6xl  md:text-7xl lg:text-8xl xl:text-9xl font-extrabold mb-4 leading-tight">
           NEX
           <span className="bg-gradient-to-r from-[#F0F0F0] to-[#D63738] bg-clip-text text-transparent">
             TECH
