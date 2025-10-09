@@ -1,9 +1,9 @@
 
 
 import Card from "../ui/card"
-import code from "../../assets/arrow-separate.svg"
-import shell from "../../assets/code-sample.svg"
-import people from "../../assets/peoples.svg"
+import { IoCodeSharp } from "react-icons/io5";
+import { FiTerminal } from "react-icons/fi";
+import { IoPeopleOutline } from "react-icons/io5";
 export default function About() {
   return (
     <section id="about" className="py-12 md:py-20 lg:py-30 bg-gray-200">
@@ -22,9 +22,9 @@ export default function About() {
       </div>
       <div className="container mx-auto px-4 md:px-6 lg:px-8 mt-12 md:mt-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
-          <Card icon={code} title="Coding Workshops" description="Hands-on sessions to learn new programming languages and frameworks." />
-          <Card icon={shell} title="Hackathons" description="Collaborative events to build innovative solutions in a short time." />
-          <Card icon={people} title="Tech Talks" description="Engaging talks from industry experts on the latest tech trends." />
+          <Card icon={<IoCodeSharp color="#D44E50" className="w-8 h-8 md:w-12 md:h-12"/>} title="Coding Workshops" description="Hands-on sessions to learn new programming languages and frameworks." />
+          <Card icon={<FiTerminal color="#D44E50" className="w-8 h-8 md:w-12 md:h-12"/>} title="Hackathons" description="Collaborative events to build innovative solutions in a short time." />
+          <Card icon={<IoPeopleOutline color="#D44E50" className="w-8 h-8 md:w-12 md:h-12"/>} title="Tech Talks" description="Engaging talks from industry experts on the latest tech trends." />
         </div>
       </div>
     </section>
