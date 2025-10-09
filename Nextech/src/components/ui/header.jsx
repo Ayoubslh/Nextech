@@ -21,16 +21,17 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div
-            className={`w-5 h-5 md:w-6 md:h-6 rotate-45 ${
-              scrolled ? "bg-[#D44E50]" : "bg-white"
-            }`}
-          ></div>
+           
+          >
+            <img src="/logo.png" alt="Logo" className="w-10 h-8" />
+          </div>
           <h1
             className={`text-lg md:text-xl lg:text-2xl font-bold ${
               scrolled ? "text-[#313131]" : "text-white"
             }`}
           >
-            <span className="text-[#D44E50]">NEX</span>TECH
+            <span className={ scrolled ? `bg-gradient-to-r from-[#D44E50] to-[#544142] bg-clip-text text-transparent` :`bg-gradient-to-r from-[#F0F0F0] to-[#D44E50] bg-clip-text text-transparent` }>
+              NEXTECH </span>
           </h1>
         </div>
 

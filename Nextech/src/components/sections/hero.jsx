@@ -19,7 +19,7 @@ export default function HeroSection() {
         left: `${leftBase + Math.random() * 10 - 5}%`,
         size: `${200 + Math.random() * 60}px`, // slightly smaller for elegance
         opacity: 1, // very soft look (0.6–0.8)
-        delay: `${Math.random() * 5}s`,
+        delay: `${Math.random() * 10}s`,
       });
     }
     return positions;
