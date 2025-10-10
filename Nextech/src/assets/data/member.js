@@ -18,7 +18,7 @@ export const members = [
     year: "3rd Year ING",
     profileImage: ayoub,
     technologies: ["React", "React native", "Express.js"],
-    linkedinUrl: "https://www.linkedin.com/in/salhiayoub/",
+    linkedinUrl: "www.linkedin.com/in/ayoub-abdelmoumen-salhi",
     githubUrl: "https://github.com/SalhiAyoub"
   },
   {
