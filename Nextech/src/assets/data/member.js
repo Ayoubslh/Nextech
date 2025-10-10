@@ -14,7 +14,7 @@ export const members = [
   {
     name: "Salhi Ayoub abdelmoumene",
     position: "Vice President",
-    specialty: "MERN and native development",
+    specialty: "Computer Security",
     year: "3rd Year ING",
     profileImage: ayoub,
     technologies: ["React", "React native", "Express.js"],
