@@ -1,3 +1,5 @@
+
+import ayoub from './../memberspics/ayoub.jpg';
 export const members = [
   {
     name: "Laieb A",
@@ -10,14 +12,14 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Sara Toumi",
+    name: "Salhi Ayoub abdelmoumene",
     position: "Vice President",
-    specialty: "UI/UX Design",
-    year: "2nd Year",
-    profileImage: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
-    technologies: ["Figma", "Adobe XD", "Illustrator"],
-    linkedinUrl: "#",
-    githubUrl: "#"
+    specialty: "Fullstack js and mobile development",
+    year: "3rd Year ING",
+    profileImage: ayoub,
+    technologies: ["React", "React native", "Express.js"],
+    linkedinUrl: "https://www.linkedin.com/in/salhiayoub/",
+    githubUrl: "https://github.com/SalhiAyoub"
   },
   {
     name: "Yacine Belkacem",
