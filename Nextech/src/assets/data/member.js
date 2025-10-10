@@ -19,7 +19,7 @@ export const members = [
     profileImage: ayoub,
     technologies: ["React", "React native", "Express.js"],
     linkedinUrl: "www.linkedin.com/in/ayoub-abdelmoumen-salhi",
-    githubUrl: "https://github.com/SalhiAyoub"
+    githubUrl: "https://github.com/Ayoubslh"
   },
   {
     name: "Yacine Belkacem",
