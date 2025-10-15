@@ -1,14 +1,15 @@
 
 import ayoub from './../memberspics/ayoub.jpg';
 import holder from './../memberspics/holder.jpeg';
+import yacine from './../memberspics/yacine.jpg';
 export const members = [
   {
-    name: "Laieb A",
+    name: "Yacine Boukaba",
     position: "President",
-    specialty: "Full Stack Development",
-    year: "3rd Year",
-    profileImage: holder,
-    technologies: ["React", "Node.js", "TypeScript"],
+    specialty: "SDSI",
+    year: "Master 1 ",
+    profileImage:yacine,
+    technologies: ["Wordpress"],
     linkedinUrl: "#",
     githubUrl: "#"
   },
