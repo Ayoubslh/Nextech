@@ -3,6 +3,7 @@ import particles from "./../../assets/particles.svg";
 import heroCode from "./../../assets/herocode.svg";
 import hero2Guys from "./../../assets/hero2guys.svg";
 import heroThunder from "./../../assets/herothunder.svg";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   // Generate non-overlapping particle positions
@@ -127,12 +128,18 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 md:mb-16">
-          <button className="bg-[#D44E50] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition text-sm md:text-base">
+          <Link 
+            to="/members" 
+            className="bg-[#D44E50] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition text-sm md:text-base inline-block text-center"
+          >
             Join Our Community →
-          </button>
-          <button className="bg-white text-[#544142] px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition text-sm md:text-base">
+          </Link>
+          <Link 
+            to="/events" 
+            className="bg-white text-[#544142] px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition text-sm md:text-base inline-block text-center"
+          >
             Explore Events
-          </button>
+          </Link>
         </div>
 
         {/* Stats */}

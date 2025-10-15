@@ -1,5 +1,6 @@
 
 import Card2 from "../ui/Card2";
+import { Link } from "react-router-dom";
 
 export default function Getintouch() {
     return (
@@ -93,9 +94,12 @@ export default function Getintouch() {
                             <p className="text-xs sm:text-sm md:text-base text-gray-600 mb-3 sm:mb-4 md:mb-6 leading-relaxed">
                                 Ready to become an active member in our future events? Fill out our membership form and start your journey with Nextech today!
                             </p>
-                            <button className="w-full bg-red-500 text-white px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-md sm:rounded-lg hover:bg-red-600 active:bg-red-700 transition-colors duration-200 font-medium text-xs sm:text-sm md:text-base">
+                            <Link 
+                                to="/members" 
+                                className="w-full bg-red-500 text-white px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-md sm:rounded-lg hover:bg-red-600 active:bg-red-700 transition-colors duration-200 font-medium text-xs sm:text-sm md:text-base inline-block text-center"
+                            >
                                 Fill Membership Form
-                            </button>
+                            </Link>
                         </Card2>
 
                         {/* Download Our App Card */}
