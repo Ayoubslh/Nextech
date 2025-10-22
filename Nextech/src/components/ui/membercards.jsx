@@ -15,7 +15,7 @@ export default function MemberCard({ member }) {
       {/* Profile Image - Responsive height */}
       <div className="relative h-40 sm:h-44 md:h-48 flex-shrink-0">
         <img
-          src={member.profileImage}
+          src={member.profileImag}
           alt={member.name}
           className="w-full h-full object-cover"
         />
