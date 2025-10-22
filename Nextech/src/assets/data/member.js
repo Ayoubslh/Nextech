@@ -24,7 +24,7 @@ export const members = [
     githubUrl: "https://github.com/Ayoubslh"
   },
   {
-    name: "Yacine Belkacem",
+    name: "vOID",
     position: "Technical Leader",
     specialty: "Cybersecurity",
     year: "4th Year",
@@ -34,7 +34,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Ines Mansouri",
+    name: " VOID",
     position: "Media Leader",
     specialty: "Marketing & Communication",
     year: "3rd Year",
@@ -44,7 +44,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Omar Djedid",
+    name: "VOID",
     position: "Tech Member",
     specialty: "Data Science",
     year: "2nd Year Master",
@@ -54,7 +54,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Lina Cherif",
+    name: "VOID",
     position: "Creative Member",
     specialty: "Graphic Design",
     year: "2nd Year",
@@ -64,7 +64,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Riad Boukhalfa",
+    name: "VOID",
     position: "Tech Member",
     specialty: "Mobile Development",
     year: "3rd Year",
@@ -74,7 +74,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Amina Sekkat",
+    name: "VOID",
     position: "Member",
     specialty: "Public Relations",
     year: "1st Year Master",
@@ -84,7 +84,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Khaled Moumene",
+    name: "VOID",
     position: "Tech Member",
     specialty: "AI & Robotics",
     year: "3rd Year",
@@ -94,7 +94,7 @@ export const members = [
     githubUrl: "#"
   },
   {
-    name: "Nour El Houda Bensalem",
+    name: "VOID",
     position: "Treasurer",
     specialty: "Finance & Management",
     year: "3rd Year",
