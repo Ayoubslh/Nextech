@@ -8,7 +8,7 @@ export const members = [
     position: "President",
     specialty: "SDSI",
     year: "Master 1 ",
-    profileImage:yacine,
+    profileImage: yacine,
     technologies: ["Wordpress"],
     linkedinUrl: "# ",
     githubUrl: "#"
