@@ -1,7 +1,7 @@
 
 import ayoub from './../memberspics/ayoub.jpg';
 import holder from './../memberspics/holder.jpeg';
-import yacine from './../memberspics/yacine.jpg';
+import yacine from './../memberspics/yacine.JPG';
 export const members = [
   {
     name: "Yacine Boukaba",
@@ -24,7 +24,7 @@ export const members = [
     githubUrl: "https://github.com/Ayoubslh"
   },
   {
-    name: "vOID",
+    name: "VOID",
     position: "Technical Leader",
     specialty: "Cybersecurity",
     year: "4th Year",
