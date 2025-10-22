@@ -10,7 +10,7 @@ export const members = [
     year: "Master 1 ",
     profileImage:yacine,
     technologies: ["Wordpress"],
-    linkedinUrl: "#",
+    linkedinUrl: "# ",
     githubUrl: "#"
   },
   {
