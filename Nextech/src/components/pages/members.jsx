@@ -2,6 +2,7 @@ import ApplicationForm from "../ui/applicationForm";
 import MemberCard from "../ui/membercards";
 import { members } from "@/assets/data/member";
 
+
 export default function Members() {
     return (
         <div className="bg-gray-200 min-h-screen font-inter pt-20">
@@ -22,7 +23,7 @@ export default function Members() {
 </div>
             </div>
 
-              <div className="text-center py-10">
+              <div className="text-center py-10" id="form">
                    <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center mb-8 md:mb-12">
                         Join The <span className="bg-gradient-to-r to-[#D44E50] from-[#544142] bg-clip-text text-transparent">Squad</span>
                     </h2>
@@ -30,7 +31,9 @@ export default function Members() {
                        Ready to be part of something amazing? Fill out the form below and let's build the future together.
                     </p>
                 </div>
+               
             <ApplicationForm  />
+           
         </div>
     );
 }

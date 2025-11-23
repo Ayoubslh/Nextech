@@ -132,7 +132,7 @@ export default function ApplicationForm() {
     };
 
     return (
-        <div className=" min-h-screen flex items-center justify-center py-10">
+        <div  className=" min-h-screen flex items-center justify-center py-10">
             <div className="bg-white p-10 rounded-lg shadow-lg w-full max-w-4xl">
 
 

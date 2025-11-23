@@ -129,7 +129,7 @@ export default function HeroSection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 md:mb-16">
           <Link 
-            to="/members" 
+            to="/members#form" 
             className="bg-[#D44E50] text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition text-sm md:text-base inline-block text-center"
           >
             Join Our Community →
