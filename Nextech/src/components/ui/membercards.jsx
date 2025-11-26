@@ -4,14 +4,14 @@ export default function MemberCard({ member }) {
   // Dynamic color for position
   const getPositionColor = (position) => {
     const p = position.toLowerCase();
-    if (p === "president") return "text-yellow-600";
-    if (p === "vice president") return "text-yellow-500";
-    if (p.includes('leader')) return "text-red-500";
-    return "text-gray-900";
+    if (p === "president") return "text-yellow-600 dark:text-yellow-400";
+    if (p === "vice president") return "text-yellow-500 dark:text-yellow-300";
+    if (p.includes('leader')) return "text-red-500 dark:text-red-400";
+    return "text-gray-900 dark:text-gray-100";
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 transition-transform hover:scale-[1.02] duration-200 w-full h-[400px] sm:h-[440px] md:h-[480px] flex flex-col">
+    <div className="bg-white dark:bg-card rounded-lg shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 transition-all hover:scale-[1.02] duration-200 w-full h-[400px] sm:h-[440px] md:h-[480px] flex flex-col">
       {/* Profile Image - Responsive height */}
       <div className="relative h-40 sm:h-44 md:h-48 flex-shrink-0">
         <img
@@ -25,7 +25,7 @@ export default function MemberCard({ member }) {
       <div className="p-4 sm:p-5 flex flex-col flex-grow">
         {/* Name - Fixed height area */}
         <div className="h-7 sm:h-8 flex items-center mb-4">
-          <h3 className="text-lg sm:text-xl font-bold text-gray-900 truncate">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white truncate">
             {member.name}
           </h3>
         </div>
@@ -43,17 +43,17 @@ export default function MemberCard({ member }) {
 
         {/* Specialty - Fixed height area */}
         <div className="h-5 flex items-center mb-1">
-          <p className="text-xs sm:text-sm text-gray-700 truncate">
+          <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 truncate">
             <span className="font-medium">Specialty:</span>{" "}
-            <span className="text-gray-600">{member.specialty}</span>
+            <span className="text-gray-600 dark:text-gray-400">{member.specialty}</span>
           </p>
         </div>
 
         {/* Academic Year - Fixed height area */}
         <div className="h-5 flex items-center mb-3">
-          <p className="text-xs sm:text-sm text-gray-700 truncate">
+          <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-300 truncate">
             <span className="font-medium">Year:</span>{" "}
-            <span className="text-gray-600">{member.year}</span>
+            <span className="text-gray-600 dark:text-gray-400">{member.year}</span>
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export default function MemberCard({ member }) {
             {member.technologies.slice(0, 6).map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-100 text-gray-800 text-[10px] sm:text-xs px-1.5 sm:px-2 py-1 rounded font-medium whitespace-nowrap"
+                className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-[10px] sm:text-xs px-1.5 sm:px-2 py-1 rounded font-medium whitespace-nowrap"
               >
                 {tech}
               </span>
@@ -93,7 +93,7 @@ export default function MemberCard({ member }) {
             href={member.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 rounded flex items-center justify-center hover:bg-gray-700 transition-colors"
+            className="w-7 h-7 sm:w-8 sm:h-8 bg-gray-800 dark:bg-gray-700 rounded flex items-center justify-center hover:bg-gray-700 dark:hover:bg-gray-600 transition-colors"
             aria-label="GitHub"
           >
             <svg

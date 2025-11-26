@@ -36,15 +36,15 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-gray-200">
+    <section className="py-12 md:py-16 lg:py-20 bg-gray-200 dark:bg-background transition-colors duration-500">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center mb-6 md:mb-8">
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center mb-6 md:mb-8 dark:text-white">
           Frequently Asked{" "}
           <span className="bg-gradient-to-r to-[#D44E50] from-[#544142] bg-clip-text text-transparent">
             Questions
           </span>
         </h2>
-        <div className="max-w-6xl mx-auto text-center text-gray-700">
+        <div className="max-w-6xl mx-auto text-center text-gray-700 dark:text-gray-300">
           <p className="mb-8 md:mb-12 text-lg md:text-xl lg:text-2xl leading-relaxed px-4">
             Get answers to common questions about joining and participating in our tech community
           </p>

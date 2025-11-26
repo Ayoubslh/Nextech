@@ -133,12 +133,12 @@ export default function ApplicationForm() {
 
     return (
         <div  className=" min-h-screen flex items-center justify-center py-10">
-            <div className="bg-white p-10 rounded-lg shadow-lg w-full max-w-4xl">
+            <div className="bg-white dark:bg-card p-10 rounded-lg shadow-lg w-full max-w-4xl transition-colors duration-300">
 
 
                 {submissionStatus === 'loading' && (
-                    <div className="bg-blue-100 text-blue-800 p-4 rounded mb-6 text-center flex items-center justify-center">
-                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <div className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 p-4 rounded mb-6 text-center flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-blue-600 dark:text-blue-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                             <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
@@ -147,9 +147,9 @@ export default function ApplicationForm() {
                 )}
 
                 {submissionStatus === 'success' && (
-                    <div className="bg-green-100 text-green-800 p-4 rounded mb-6 text-center">
+                    <div className="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 p-4 rounded mb-6 text-center">
                         <div className="flex items-center justify-center">
-                            <svg className="h-5 w-5 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="h-5 w-5 text-green-600 dark:text-green-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
                             Application submitted successfully! We'll get back to you soon.
@@ -158,9 +158,9 @@ export default function ApplicationForm() {
                 )}
 
                 {submissionStatus === 'error' && (
-                    <div className="bg-red-100 text-red-800 p-4 rounded mb-6 text-center">
+                    <div className="bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 p-4 rounded mb-6 text-center">
                         <div className="flex items-center justify-center">
-                            <svg className="h-5 w-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="h-5 w-5 text-red-600 dark:text-red-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                             {errorMessage || 'There was an error submitting your application. Please try again.'}
@@ -170,7 +170,7 @@ export default function ApplicationForm() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1  gap-4">
                         <div>
-                            <label className="block text-sm font-medium mb-1" htmlFor="fullName">Full Name</label>
+                            <label className="block text-sm font-medium mb-1 dark:text-gray-200" htmlFor="fullName">Full Name</label>
                             <input
                                 type="text"
                                 id="fullName"
@@ -178,11 +178,11 @@ export default function ApplicationForm() {
                                 value={formData.fullName}
                                 onChange={handleChange}
                                 required
-                                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50]"
+                                className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50] bg-white dark:bg-gray-800 dark:text-white"
                             />
                         </div>
                         <div>
-                            <label className="block text-sm font-medium mb-1" htmlFor="email">Email</label>
+                            <label className="block text-sm font-medium mb-1 dark:text-gray-200" htmlFor="email">Email</label>
                             <input
                                 type="email"
                                 id="email"
@@ -190,13 +190,13 @@ export default function ApplicationForm() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50]"
+                                className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50] bg-white dark:bg-gray-800 dark:text-white"
                             />
                         </div>
                         <div >
                             <div className='grid grid-cols-2 gap-4'>
-                                <label className=" text-sm font-medium mb-1" htmlFor="speciality">Speciality</label>
-                                <label className=" text-sm font-medium mb-1" htmlFor="academicYear">Academic Year</label>
+                                <label className=" text-sm font-medium mb-1 dark:text-gray-200" htmlFor="speciality">Speciality</label>
+                                <label className=" text-sm font-medium mb-1 dark:text-gray-200" htmlFor="academicYear">Academic Year</label>
                             </div>
                             <div className='grid grid-cols-2 gap-4'>
                                 <input
@@ -206,7 +206,7 @@ export default function ApplicationForm() {
                                     value={formData.speciality}
                                     onChange={handleChange}
                                     required
-                                    className=" border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50]"
+                                    className=" border border-gray-300 dark:border-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50] bg-white dark:bg-gray-800 dark:text-white w-full"
                                 />
 
 
@@ -217,13 +217,13 @@ export default function ApplicationForm() {
                                     value={formData.academicYear}
                                     onChange={handleChange}
                                     required
-                                    className=" border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50]"
+                                    className=" border border-gray-300 dark:border-gray-700 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#D44E50] bg-white dark:bg-gray-800 dark:text-white w-full"
                                 />
                             </div>
                         </div>
                     </div>
                     <div>
-                        <label className="block text-sm font-medium mb-1" htmlFor="skills">
+                        <label className="block text-sm font-medium mb-1 dark:text-gray-200" htmlFor="skills">
                             Skills (comma separated)
                         </label>
                         <textarea
@@ -232,12 +232,12 @@ export default function ApplicationForm() {
                             value={formData.skills}
                             onChange={handleChange}
                             rows={3} // Adjust height (3–6 works well)
-                            className="w-full border border-gray-300 p-2 rounded resize-y focus:outline-none focus:ring-2 focus:ring-[#D44E50]"
+                            className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded resize-y focus:outline-none focus:ring-2 focus:ring-[#D44E50] bg-white dark:bg-gray-800 dark:text-white"
                         />
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium mb-1" htmlFor="projects">
+                        <label className="block text-sm font-medium mb-1 dark:text-gray-200" htmlFor="projects">
                             Projects (optional)
                         </label>
                         <textarea
@@ -246,7 +246,7 @@ export default function ApplicationForm() {
                             value={formData.projects}
                             onChange={handleChange}
                             rows={4} // slightly taller than skills
-                            className="w-full border border-gray-300 p-2 rounded resize-y focus:outline-none focus:ring-2 focus:ring-[#D44E50]"
+                            className="w-full border border-gray-300 dark:border-gray-700 p-2 rounded resize-y focus:outline-none focus:ring-2 focus:ring-[#D44E50] bg-white dark:bg-gray-800 dark:text-white"
                         />
                     </div>
                     <div className="text-center">

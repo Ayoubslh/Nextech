@@ -1,12 +1,12 @@
 export default function Projects() {
   return (
-    <div className="bg-gray-200 min-h-screen font-inter pt-20">
+    <div className="bg-gray-200 dark:bg-background min-h-screen font-inter pt-20 transition-colors duration-500">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center py-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#313131] mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#313131] dark:text-white mb-6">
             Our Projects
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Explore the innovative projects developed by NEXTECH members.
             From web applications to mobile apps and AI solutions.
           </p>
@@ -15,7 +15,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
           {/* Placeholder project cards */}
           {[1, 2, 3, 4, 5, 6].map((project) => (
-            <div key={project} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div key={project} className="bg-white dark:bg-card rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="h-48 bg-gradient-to-br from-[#D44E50] via-[#544142] to-[#313131] relative">
                 <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
                   <div className="text-white text-6xl opacity-30">
@@ -26,10 +26,10 @@ export default function Projects() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-[#313131] mb-2">
+                <h3 className="text-xl font-semibold text-[#313131] dark:text-white mb-2">
                   Project {project}
                 </h3>
-                <p className="text-gray-600 mb-4 text-sm">
+                <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm">
                   An innovative solution built with modern technologies to solve real-world problems.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">

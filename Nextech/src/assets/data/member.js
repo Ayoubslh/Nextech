@@ -2,6 +2,7 @@
 import ayoub from './../memberspics/ayoub.jpg';
 import holder from './../memberspics/holder.jpeg';
 import yacine from './../memberspics/yacine.JPG';
+import hiovel from './../memberspics/hiovel.jpg';
 export const members = [
   {
     name: "Yacine Boukaba",
@@ -9,7 +10,7 @@ export const members = [
     specialty: "SDSI",
     year: "Master 1 ",
     profileImage: yacine,
-    technologies: ["Wordpress"],
+    technologies: ["web developer"],
     linkedinUrl: "# ",
     githubUrl: "#"
   },
@@ -19,19 +20,19 @@ export const members = [
     specialty: "Computer Security",
     year: "3rd Year ING",
     profileImage: ayoub,
-    technologies: ["React", "React native", "Express.js"],
+    technologies: ["web developer", "mobile developer", "video editing"],
     linkedinUrl: "www.linkedin.com/in/ayoub-abdelmoumen-salhi",
     githubUrl: "https://github.com/Ayoubslh"
   },
   {
-    name: "VOID",
-    position: "Technical Leader",
-    specialty: "Cybersecurity",
-    year: "4th Year",
-    profileImage: holder ,
-    technologies: ["Python", "Network Security", "Burp Suite"],
-    linkedinUrl: "#",
-    githubUrl: "#"
+    name: "Hiouel Mohamed Kheireddine ",
+    position: "Multimedia Leader",
+    specialty: "Software Engineering",
+    year: "3rd Year",
+    profileImage: hiovel ,
+    technologies: ["web developer", "graphic designer"],
+    linkedinUrl: "https://www.linkedin.com/in/hiouel-mohamed-kheireddine-3734ba38a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    githubUrl: "https://github.com/mohmedhv"
   },
   {
     name: " VOID",

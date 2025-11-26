@@ -6,15 +6,15 @@ import { FiTerminal } from "react-icons/fi";
 import { IoPeopleOutline } from "react-icons/io5";
 export default function About() {
   return (
-    <section id="about" className="py-12 md:py-20 lg:py-30 bg-gray-200">
+    <section id="about" className="py-12 md:py-20 lg:py-30 bg-gray-200 dark:bg-background transition-colors duration-500">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center mb-8 md:mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-center mb-8 md:mb-12 dark:text-white">
           About Our {" "} 
           <span className="bg-gradient-to-r to-[#D44E50] from-[#544142] bg-clip-text text-transparent">
             Club
           </span>
         </h2>
-        <div className="max-w-6xl mx-auto text-center text-gray-700">
+        <div className="max-w-6xl mx-auto text-center text-gray-700 dark:text-gray-300">
           <p className="mb-6 text-lg md:text-xl lg:text-2xl leading-relaxed px-4">
             Our IT club organizes a variety of activities and events such as coding workshops, hackathons, tech talks with industry professionals, and collaborative project development.
           </p>

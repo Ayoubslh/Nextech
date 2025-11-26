@@ -7,7 +7,7 @@ import Getintouch from './../sections/Getintouch'
 
 export default function Landing() {
     return(
-  <div className=" bg-gray-200 font-inter">
+  <div className=" bg-gray-200 dark:bg-background font-inter">
         
         <HeroSection />
         <About />

@@ -31,10 +31,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative flex flex-col items-center justify-center text-center min-h-screen overflow-hidden px-4 py-8"
-      style={{
-        background: "linear-gradient(135deg, #544142 0%, #D44E50 100%)",
-      }}
+      className="relative flex flex-col items-center justify-center text-center min-h-screen overflow-hidden px-4 py-8 bg-[linear-gradient(135deg,#544142_0%,#D44E50_100%)] dark:bg-[linear-gradient(135deg,#2a2021_0%,#4a1b1c_100%)] transition-all duration-500"
     >
       {/* PARTICLES BACKGROUND */}
       <div className="absolute inset-0 overflow-hidden z-0">
@@ -117,7 +114,7 @@ export default function HeroSection() {
             TECH
           </span>
         </h1>
-        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-black mb-6 font-semibold">
+        <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white mb-6 font-semibold transition-colors duration-500">
           Your Hub for Tech Excellence
         </p>
         <p className="text-base md:text-lg lg:text-xl opacity-90 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -136,7 +133,7 @@ export default function HeroSection() {
           </Link>
           <Link 
             to="/events" 
-            className="bg-white text-[#544142] px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition text-sm md:text-base inline-block text-center"
+            className="bg-white dark:bg-gray-800 text-[#544142] dark:text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold shadow-md hover:scale-105 transition-colors duration-300 text-sm md:text-base inline-block text-center"
           >
             Explore Events
           </Link>

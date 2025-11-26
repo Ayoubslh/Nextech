@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "./theme-provider";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
   const location = useLocation();
 
   const isLanding = location.pathname === "/"; 
@@ -26,19 +28,19 @@ export default function Header() {
   // ✅ Compute header style based on route + scroll
   const headerStyle = isLanding
     ? scrolled
-      ? "bg-white shadow-md"
+      ? "bg-white dark:bg-background shadow-md"
       : "bg-transparent"
-    : "bg-white shadow-md";
+    : "bg-white dark:bg-background shadow-md";
 
   const textColor = isLanding
     ? scrolled
-      ? "text-[#313131]"
+      ? "text-[#313131] dark:text-white"
       : "text-white"
-    : "text-[#313131]";
+    : "text-[#313131] dark:text-white";
 
   return (
     <header
-      className={`w-full fixed top-0 left-0 z-20 py-3 md:py-4 lg:py-6 transition-all duration-300 ${headerStyle}`}
+      className={`w-full fixed top-0 left-0 z-20 py-3 md:py-4 lg:py-6 transition-all duration-500 ${headerStyle}`}
     >
       <div className="container mx-auto px-4 md:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
@@ -101,13 +103,16 @@ export default function Header() {
         {/* Right side buttons */}
         <div className="hidden md:flex items-center gap-2 md:gap-4">
           <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
             className={`w-8 h-4 md:w-10 md:h-5 rounded-full flex items-center px-1 transition-colors ${
-              scrolled || !isLanding ? "bg-[#E3E3E3]" : "bg-white/20"
+              scrolled || !isLanding ? "bg-[#E3E3E3] dark:bg-gray-700" : "bg-white/20"
             }`}
           >
             <div
-              className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all ${
+              className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 ${
+                theme === "dark" ? "translate-x-4 md:translate-x-5" : "translate-x-0"
+              } ${
                 scrolled || !isLanding ? "bg-[#D44E50]" : "bg-white"
               }`}
             ></div>
@@ -128,7 +133,7 @@ export default function Header() {
         <div
           className={`lg:hidden absolute top-full left-0 w-full z-10 ${
             scrolled || !isLanding
-              ? "bg-white shadow-lg"
+              ? "bg-white dark:bg-background shadow-lg"
               : "bg-black bg-opacity-90"
           }`}
         >
@@ -139,7 +144,7 @@ export default function Header() {
                 to={path}
                 className={`block text-base font-medium transition ${
                   scrolled || !isLanding
-                    ? "text-[#313131] hover:text-[#D44E50]"
+                    ? "text-[#313131] dark:text-white hover:text-[#D44E50]"
                     : "text-white hover:text-[#D44E50]"
                 } ${isActive(path) ? "text-[#D44E50] font-semibold" : ""}`}
               >
@@ -148,13 +153,30 @@ export default function Header() {
                   : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
               </Link>
             ))}
-            <div className="pt-3 border-t border-gray-300">
+            <div className="pt-3 border-t border-gray-300 dark:border-gray-700 flex items-center justify-between">
               <Link
                 to="/events"
-                className="block w-full text-center bg-[#D44E50] text-white px-4 py-2 rounded-md font-semibold hover:bg-[#b03d3f] transition-colors"
+                className="bg-[#D44E50] text-white px-4 py-2 rounded-md font-semibold hover:bg-[#b03d3f] transition-colors"
               >
                 Join Event
               </Link>
+              
+              {/* Mobile Theme Toggle */}
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                aria-label="Toggle theme"
+                className={`w-10 h-5 rounded-full flex items-center px-1 transition-colors ${
+                  scrolled || !isLanding ? "bg-[#E3E3E3] dark:bg-gray-700" : "bg-white/20"
+                }`}
+              >
+                <div
+                  className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                    theme === "dark" ? "translate-x-5" : "translate-x-0"
+                  } ${
+                    scrolled || !isLanding ? "bg-[#D44E50]" : "bg-white"
+                  }`}
+                ></div>
+              </button>
             </div>
           </nav>
         </div>
