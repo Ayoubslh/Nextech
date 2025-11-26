@@ -28,7 +28,7 @@ export const members = [
     name: "Hiouel Mohamed Kheireddine ",
     position: "Multimedia Leader",
     specialty: "Software Engineering",
-    year: "3rd Year",
+    year: "L3",
     profileImage: hiovel ,
     technologies: ["web developer", "graphic designer"],
     linkedinUrl: "https://www.linkedin.com/in/hiouel-mohamed-kheireddine-3734ba38a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
