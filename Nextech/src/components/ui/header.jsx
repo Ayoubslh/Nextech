@@ -25,7 +25,7 @@ export default function Header() {
 
   const isActive = (path) => location.pathname === path;
 
-  // ✅ Compute header style based on route + scroll
+  //  Compute header style based on route + scroll
   const headerStyle = isLanding
     ? scrolled
       ? "bg-white dark:bg-background shadow-md"
